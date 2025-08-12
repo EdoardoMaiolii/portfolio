@@ -7,7 +7,7 @@ export default function Projects() {
       title: "StarGazers",
       category: "Android Demo App",
       technologies: "Kotlin, MVVM, Dependency Injection, Kotlin Coroutines",
-      image: "../images/star_gazers_screenshot.jpeg",
+      image: "/images/star_gazers_screenshot.jpeg",
       link: "https://github.com/EdoardoMaiolii/StarGazers"
     },
     {

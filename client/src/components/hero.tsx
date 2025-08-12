@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
           <div className="lg:w-1/3">
             <img
-              src="../images/personal_photo.jpeg"
+              src="/images/personal_photo.jpeg"
               alt="Edoardo Maioli - Professional headshot"
               className="rounded-full w-80 h-80 object-cover shadow-2xl mx-auto"
               data-testid="img-profile"

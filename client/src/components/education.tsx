@@ -7,7 +7,7 @@ export default function Education() {
       institution: "University of Bologna",
       degree: "Bachelor's Degree in Computer Engineering and Computer Science",
       period: "September 2018 - October 2021",
-      logo: "../images/unibo_logo.jpg",
+      logo: "/images/unibo_logo.jpg",
       details: "Bachelor Thesis: IoMT, EGA as a case study - focused on Internet of Medical Things and electronic health applications.",
       thesisLink: "https://amslaurea.unibo.it/24306/",
       gridSpan: "md:col-span-2"

@@ -7,7 +7,7 @@ export default function Experience() {
       company: "Amaris",
       position: "Android Automotive Software Developer",
       period: "June 2024 - Present",
-      logo: "../images/images.jpeg",
+      logo: "/images/images.jpeg",
       achievements: [
         "Creating responsive and precise UI/UX experiences for top-leading automotive companies, developing interfaces that will be used by millions of drivers worldwide in the future.",
         "Specializing in Android Automotive development with focus on user experience and performance optimization for in-vehicle systems."
@@ -18,7 +18,7 @@ export default function Experience() {
       company: "Onit",
       position: "Mobile Software Developer",
       period: "October 2021 - June 2024",
-      logo: "../images/onitsmart_logo.jpg",
+      logo: "/images/onitsmart_logo.jpg",
       achievements: [
         "Reached thousands of users on Play Store with Android mobile apps written in Java and Kotlin, and Android TV app with Kotlin (B2B).",
         "Developed native iOS mobile app with Swift storyboard and SwiftUI, through Xcode framework, delivering cross-platform mobile solutions."
@@ -29,7 +29,7 @@ export default function Experience() {
       company: "CodiceZero",
       position: "Android Mobile Software Developer Intern",
       period: "July 2021 - September 2021",
-      logo: "../images/codicezero_logo.png",
+      logo: "/images/codicezero_logo.png",
       achievements: [
         "Learned Kotlin language and Android Studio framework, building foundational skills in mobile development.",
         "Gained hands-on experience with Android development best practices and modern mobile architecture patterns."
