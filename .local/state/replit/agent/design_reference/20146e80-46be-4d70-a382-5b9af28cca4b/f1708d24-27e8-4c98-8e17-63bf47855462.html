@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filippo Venturini - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#1F2937',
+                        'secondary': '#6B7280',
+                        'accent': '#3B82F6',
+                        'bg-light': '#F9FAFB'
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-bg-light text-primary">
+    <!-- @COMPONENT: Header [navigation and branding] -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-primary">Filippo Venturini</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-secondary hover:text-accent transition-colors">About</a>
+                    <a href="#experience" class="text-secondary hover:text-accent transition-colors">Experience</a>
+                    <a href="#education" class="text-secondary hover:text-accent transition-colors">Education</a>
+                    <a href="#projects" class="text-secondary hover:text-accent transition-colors">Projects</a>
+                    <a href="#contact" class="text-secondary hover:text-accent transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-secondary">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero [main introduction and profile] -->
+    <section class="bg-white py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-2/3">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6">
+                        Hi, I'm <span class="text-accent">Filippo</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-secondary mb-8 leading-relaxed">
+                        Software Engineer, passionate about Generative AI, Machine Learning, IoT, Distributed Systems, and VR/AR systems. 🚀🤖✨
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="#experience" class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-white transition-colors">
+                            Get In Touch
+                        </a>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-secondary hover:text-accent transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-secondary hover:text-accent transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-secondary hover:text-accent transition-colors">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/3">
+                    <!-- Professional headshot of a young software engineer in business casual attire -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" alt="Filippo Venturini" class="rounded-full w-80 h-80 object-cover shadow-2xl mx-auto" data-mock="true" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero -->
+
+    <!-- @COMPONENT: About [personal introduction and background] -->
+    <section id="about" class="py-16 bg-bg-light">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+            <div class="bg-white rounded-xl shadow-lg p-8 sm:p-12">
+                <p class="text-lg text-secondary leading-relaxed">
+                    Hi! I'm Filippo, I'm currently working as a Software Engineer at Blue Reply IT. 
+                    I specialize in building scalable distributed systems and exploring cutting-edge AI technologies. 
+                    My passion lies in creating innovative solutions that bridge the gap between theoretical research 
+                    and practical applications, particularly in the fields of machine learning, autonomous systems, 
+                    and immersive technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About -->
+
+    <!-- @COMPONENT: Experience [work history and achievements] -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">Work Experience</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+            
+            <!-- Blue Reply IT -->
+            <div class="bg-bg-light rounded-xl shadow-lg p-8 mb-8 hover:shadow-xl transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6">
+                    <!-- Blue Reply IT company logo placeholder -->
+                    <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&h=128" alt="Blue Reply IT Logo" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-primary">Software Engineer</h3>
+                        <p class="text-accent font-semibold">Blue Reply IT</p>
+                        <p class="text-secondary">October 2024 - Current</p>
+                    </div>
+                </div>
+                <ul class="space-y-3 text-secondary">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Built a real-time clustering system for road events (accidents, construction, weather) powering (de)activation of autonomous driving features across 1M+ vehicles, with 85% latency reduction. Scaled to 30k+ daily events using Java, Spring Boot, and MongoDB on Kubernetes/AWS.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Designed and deployed a multi-agent system with LangGraph and Python to automate end-to-end JUnit test generation from GitLab issues. Processed 50+ issues/month, saving ~60 QA hours/quarter; adopted by 2+ engineering teams within 3 months, fully replacing manual test workflows.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SPOT Software -->
+            <div class="bg-bg-light rounded-xl shadow-lg p-8 mb-8 hover:shadow-xl transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6">
+                    <!-- SPOT Software company logo placeholder -->
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&h=128" alt="SPOT Software Logo" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-primary">Software Engineer, Intern</h3>
+                        <p class="text-accent font-semibold">SPOT Software</p>
+                        <p class="text-secondary">February 2022 - April 2022</p>
+                    </div>
+                </div>
+                <ul class="space-y-3 text-secondary">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Developed modular web applications using Angular microfrontends, enabling independent deployment pipelines across feature teams.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Implemented async data flows with RxJS streams and leveraged functional programming patterns (immutability, pure functions, monadic composition) to reduce side effects and improve code testability.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Vae Victis Games -->
+            <div class="bg-bg-light rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6">
+                    <!-- Vae Victis Games company logo placeholder -->
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&h=128" alt="Vae Victis Games Logo" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-primary">AI Tester, Intern</h3>
+                        <p class="text-accent font-semibold">Vae Victis Games</p>
+                        <p class="text-secondary">January 2018 - March 2018</p>
+                    </div>
+                </div>
+                <ul class="space-y-3 text-secondary">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-accent mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Evaluated and optimized the AI model for random circuit generation in the sandbox racing game RaceCraft, enhancing track diversity and player experience. Tested and fine-tuned hyperparameters for AI-driven automated drivers, resulting in smoother, more competitive, and adaptive racing behavior.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Experience -->
+
+    <!-- @COMPONENT: Education [academic background] -->
+    <section id="education" class="py-16 bg-bg-light">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">Education</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- University of Bologna MSc -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4 mb-6">
+                        <!-- University of Bologna logo placeholder -->
+                        <img src="https://pixabay.com/get/g8c8f3be6934e33662b8ef77fb4aa64ffe8589bfd24d8dab59872c88357133ee653aba8ccc809032ceedab38081a1eb789bd7f6860c8fd7a3046d95606a79f6e3_1280.jpg" alt="University of Bologna Logo" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">MSc Computer Science and Engineering</h3>
+                            <p class="text-accent font-semibold">University of Bologna</p>
+                            <p class="text-secondary">2022 - 2024</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-secondary">
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-500 mr-2"></i>
+                            <span>110/110 with Honors</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-graduation-cap text-accent mt-1 mr-2 flex-shrink-0"></i>
+                            <span>Thesis focused on decentralized multi-agent reinforcement learning via GNNs, leading to a published research paper.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- UPC Barcelona -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-4 mb-6">
+                        <!-- UPC Barcelona logo placeholder -->
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&h=128" alt="UPC Barcelona Logo" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">MSc Artificial Intelligence</h3>
+                            <p class="text-accent font-semibold">UPC Barcelona</p>
+                            <p class="text-secondary">Sep 2023 - Feb 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary text-sm mb-3">Erasmus Exchange Program</p>
+                    <ul class="space-y-2 text-secondary text-sm">
+                        <li>• Computer Graphics, VR/AR, Cognitive Robotics</li>
+                        <li>• Real-time simulation with C++</li>
+                        <li>• Unity AR/VR development</li>
+                        <li>• AI-driven game development</li>
+                        <li>• MediaPipe pose estimation</li>
+                    </ul>
+                </div>
+
+                <!-- University of Bologna BSc -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow md:col-span-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <!-- University of Bologna logo placeholder -->
+                        <img src="https://pixabay.com/get/g8c8f3be6934e33662b8ef77fb4aa64ffe8589bfd24d8dab59872c88357133ee653aba8ccc809032ceedab38081a1eb789bd7f6860c8fd7a3046d95606a79f6e3_1280.jpg" alt="University of Bologna Logo" class="w-16 h-16 rounded-lg object-cover" data-mock="true" />
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">BSc Computer Science and Engineering</h3>
+                            <p class="text-accent font-semibold">University of Bologna</p>
+                            <p class="text-secondary">2019 - 2022</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-secondary">
+                        <li class="flex items-center">
+                            <i class="fas fa-star text-yellow-500 mr-2"></i>
+                            <span>110/110 with Honors</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-graduation-cap text-accent mt-1 mr-2 flex-shrink-0"></i>
+                            <span>Thesis: built a real-time network architecture in Unity (C#) for collaborative Mixed Reality on HoloLens 2, supporting consistent multi-user state sync. Achieved <50 ms latency and 3,800 packets/sec throughput in high-entity-density scenarios over TCP and UDP.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Education -->
+
+    <!-- @COMPONENT: Projects [personal projects showcase] -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">Personal Projects</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- MARL Project -->
+                <div class="bg-bg-light rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                    <!-- AI and neural networks visualization -->
+                    <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&h=360" alt="MARL of Swarm Behaviours with GNNs" class="w-full h-48 object-cover group-hover:scale-105 transition-transform" data-mock="true" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">MARL of Swarm Behaviours with GNNs</h3>
+                        <p class="text-accent font-semibold mb-2">Master Thesis</p>
+                        <p class="text-secondary mb-4">Graph Neural Networks, Multi-Agent, Reinforcement Learning</p>
+                        <a href="#" class="inline-flex items-center text-accent hover:text-blue-600 transition-colors">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PlagueDotScala -->
+                <div class="bg-bg-light rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                    <!-- Game development screenshot -->
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&h=360" alt="PlagueDotScala Game" class="w-full h-48 object-cover group-hover:scale-105 transition-transform" data-mock="true" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">PlagueDotScala</h3>
+                        <p class="text-accent font-semibold mb-2">Game</p>
+                        <p class="text-secondary mb-4">Scala, FP, SCRUM, TDD</p>
+                        <a href="#" class="inline-flex items-center text-accent hover:text-blue-600 transition-colors">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ErasmusPlus -->
+                <div class="bg-bg-light rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                    <!-- Web application interface -->
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&h=360" alt="ErasmusPlus Website" class="w-full h-48 object-cover group-hover:scale-105 transition-transform" data-mock="true" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">ErasmusPlus</h3>
+                        <p class="text-accent font-semibold mb-2">Website</p>
+                        <p class="text-secondary mb-4">MEVN Stack, GoogleMaps, HCI, UX</p>
+                        <a href="#" class="inline-flex items-center text-accent hover:text-blue-600 transition-colors">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MovieNerd -->
+                <div class="bg-bg-light rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+                    <!-- Mobile app interface -->
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&h=360" alt="MovieNerd Mobile Application" class="w-full h-48 object-cover group-hover:scale-105 transition-transform" data-mock="true" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2">MovieNerd</h3>
+                        <p class="text-accent font-semibold mb-2">Mobile Application</p>
+                        <p class="text-secondary mb-4">Android, Java, IMDB, Gamification</p>
+                        <a href="#" class="inline-flex items-center text-accent hover:text-blue-600 transition-colors">
+                            View Project <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Projects -->
+
+    <!-- @COMPONENT: Contact [contact information and social links] -->
+    <section id="contact" class="py-16 bg-bg-light">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-lg p-8 sm:p-12 text-center">
+                <p class="text-lg text-secondary mb-8 max-w-2xl mx-auto">
+                    I'm always interested in new opportunities and collaborations. 
+                    Whether you have a project in mind or just want to connect, feel free to reach out!
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-6 mb-8">
+                    <a href="mailto:filippo@example.com" class="flex items-center gap-3 bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors" data-mock="true">
+                        <i class="fas fa-envelope"></i>
+                        <span>filippo@example.com</span>
+                    </a>
+                    <a href="tel:+1234567890" class="flex items-center gap-3 border-2 border-accent text-accent px-6 py-3 rounded-lg hover:bg-accent hover:text-white transition-colors" data-mock="true">
+                        <i class="fas fa-phone"></i>
+                        <span>+39 123 456 7890</span>
+                    </a>
+                </div>
+                
+                <div class="flex justify-center space-x-8">
+                    <a href="#" class="text-secondary hover:text-accent transition-colors" data-mock="true">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-accent transition-colors" data-mock="true">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-accent transition-colors" data-mock="true">
+                        <i class="fab fa-twitter text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-secondary hover:text-accent transition-colors" data-mock="true">
+                        <i class="fas fa-globe text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact -->
+
+    <!-- @COMPONENT: Footer [copyright and additional links] -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-secondary mb-4">© 2024 Filippo Venturini. All rights reserved.</p>
+                <p class="text-sm text-secondary">
+                    Built with modern web technologies and a passion for clean design.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // Smooth scrolling for navigation links
+        (function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            if (mobileMenuButton) {
+                // TODO: Implement mobile menu toggle functionality
+                mobileMenuButton.addEventListener('click', function() {
+                    console.log('Mobile menu toggle clicked');
+                });
+            }
+
+            // Header scroll effect
+            let lastScroll = 0;
+            const header = document.querySelector('header');
+            
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.pageYOffset;
+                
+                if (currentScroll > lastScroll && currentScroll > 100) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+                
+                lastScroll = currentScroll;
+            });
+        })();
+    </script>
+</body>
+</html>
