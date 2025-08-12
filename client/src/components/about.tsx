@@ -10,8 +10,8 @@ export default function About() {
           <p className="text-lg text-secondary leading-relaxed" data-testid="text-about-description">
             Hi! I'm Edoardo, I'm currently working as an Android Automotive Software Developer at Amaris in Torino. 
             I specialize in creating responsive and precise UI/UX experiences for top-leading automotive companies, 
-            developing interfaces that will be used by millions of drivers worldwide. My expertise spans mobile development 
-            with Android and iOS platforms, IoT systems, and embedded technologies. I'm passionate about crafting 
+            developing interfaces that will be used by millions of drivers worldwide. My expertise spans from mobile development 
+            with Android and iOS platforms, IoT systems, to embedded technologies. I'm passionate about crafting 
             user-centered solutions that combine cutting-edge technology with intuitive design.
           </p>
         </div>
